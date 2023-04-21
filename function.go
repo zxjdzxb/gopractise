@@ -32,6 +32,11 @@ func main() {
 
 	fmt.Printf("交换后，a 的值 : %d\n", a)
 	fmt.Printf("交换后，b 的值 : %d\n", b)
+
+	var getSquareRoot = func(x float64) float64 {
+		return x * x
+	}
+	fmt.Println(getSquareRoot(3.14))
 }
 
 /* 函数返回两个数的最大值 */
