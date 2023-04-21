@@ -32,4 +32,23 @@ func main() {
 		}
 		fmt.Println()
 	}
+
+	var i, j int
+
+	for i = 2; i < 100; i++ {
+		for j = 2; j <= (i / j); j++ {
+			if i%j == 0 {
+				break // 如果发现因子，则不是素数
+			}
+		}
+		if j > (i / j) {
+			fmt.Printf("%d  是素数\n", i)
+		}
+	}
+	// for range
+	// for 循环的 range 格式可以对 slice、map、数组、字符串等进行迭代循环。
+	// 格式如下：
+	// for key, value := range oldMap {
+	//     newMap[key] = value
+	//}
 }
